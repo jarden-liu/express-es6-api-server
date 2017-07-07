@@ -1,5 +1,5 @@
 {
   "server": {
-    "default_port": 80
+    "default_port": 8888
   }
 }
