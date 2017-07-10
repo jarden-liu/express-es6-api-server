@@ -1,5 +1,13 @@
 {
   "server": {
     "default_port": 8888
+  },
+  "db":{
+    "dbname":"MailCname",
+    "host":"127.0.0.1",
+    "port":"27017",
+    "user":"root",
+    "password":"xinghuo844",
+    "authSource":"admin"
   }
 }

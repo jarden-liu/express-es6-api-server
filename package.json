@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "dev2": "nodemon -w src --exec \"babel-node src/db --presets es2015,stage-0\"",
     "build": "babel src -s -D -d dist --presets es2015,stage-0",
     "prestart": "npm run -s build",
     "start": "node  dist/",
@@ -30,7 +31,9 @@
     "compression": "^1.6.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
+    "mongoose": "^4.11.1",
     "morgan": "^1.8.2",
+    "q": "^1.5.0",
     "resource-router-middleware": "^0.7.0"
   },
   "devDependencies": {
