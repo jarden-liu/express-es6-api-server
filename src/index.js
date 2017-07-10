@@ -15,9 +15,8 @@ app.use('/api', api({config}));
 
 initDb({...config.db}, () => {
   app.server.listen(process.env.port || config.server.default_port, (err) => {
-    if (err) {
+    if (err)
       throw err;
-    }
     console.log(`Started on port ${app.server.address().port}`);
   });
 });
